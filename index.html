@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: linear-gradient(to right, black, rgb(50,50,50));
+        }
+
+        h1 {
+            color: white;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+        }  
+
+        p {
+            color: white;
+            font-family: sans-serif;
+            font-weight: lighter;
+            margin: 10px 0px 0px 10px;
+        }
+
+        main {
+            background-color: gray;
+            margin: 0px 0px 0px 0px;
+            width: 25%;
+            height: 200px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        button#botao {
+            margin: 30px 1px -1px 19px;
+        }
+
+
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <!-- Main login-->
+        <h1>Login</h1>
+        <p>Nome <input id="Nome" type="text"></p>
+        <p>Senha <input id="Senha" type="text"></p>
+        <button type="button" id="botao" onclick="func()" value="display">Logar</button>
+        <script>
+            function func(){
+                x = document.getElementById("Nome");
+                y = documento.getElementById("Senha");
+                document.getElementById("botao");
+
+                if (x == "admin" && y == "admin"){
+                    alert("Logado com sucesso!");
+                }
+            }
+        </script>
+        
+    </main>
+    
+</body>
+</html>
